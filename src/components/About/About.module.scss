@@ -1,0 +1,35 @@
+.about {
+  max-width: 69.375rem;
+  width: 90%;
+  margin: auto;
+  color: var(--color-grey-dark);
+  &__heading {
+    margin: 3.75rem 0 5rem 0;
+    font-size: 4.5rem;
+    font-family: var(--heading-font);
+    font-weight: 300;
+}
+&__features{
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+}
+&__feature{
+    max-width: 20rem;
+}
+&__icon {
+    margin-bottom: 2rem;
+}
+&__title {
+    font-family: var(--heading-font);
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+
+}
+  &__text {
+    font-size: .9rem;
+    color: var(--color-grey);
+    line-height: 1.5;
+  }
+}

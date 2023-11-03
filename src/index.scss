@@ -1,0 +1,30 @@
+:root {
+  // Colors
+
+  /// Primary
+
+  --color-primary: hsl(256, 26%, 20%);
+  --color-accent: hsl(216, 30%, 68%);
+
+  /// Neutral
+
+  --color-grey-dark: hsl(270, 9%, 17%);
+  --color-grey: hsl(273, 4%, 51%);
+  --color-grey-light: hsl(0, 0%, 98%);
+
+  /// Fonts
+  --default-font: "Karla", sans-serif;
+  --heading-font: "DM Serif Display", serif;
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: var(--default-font);
+  background-color: white;
+}

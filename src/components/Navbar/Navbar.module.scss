@@ -1,0 +1,33 @@
+.navbar {
+  background-color: white;
+    max-width: 69.375rem;
+    width: 90%;
+    margin: 2rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 100;
+  &__logo {
+  }
+  &__nav {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding-inline-start: 0;
+    color: var(--color-grey);
+    font-weight: 700;
+    &--item {
+        font-size: .9rem;
+        text-transform: uppercase;
+        transition: all .3s;
+        &:hover{
+          cursor: pointer;
+            color: var(--color-grey-dark);
+        }
+        &:not(:last-child){
+            margin-right: 2rem;
+        }
+    }
+  }
+}

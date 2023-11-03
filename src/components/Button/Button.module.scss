@@ -1,0 +1,29 @@
+.button {
+  background-color: transparent;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-family: inherit;
+  font-weight: 700;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border: 2px solid transparent;
+  transition: all .3s;
+  &__dark {
+    color: var(--color-grey-dark);
+    border-color: var(--color-grey-dark);
+    &:hover{
+      cursor: pointer;
+      background-color: var(--color-grey-dark);
+      color: var(--color-grey-light);
+    }
+  }
+  &__light {
+    color: var(--color-grey-light);
+    border-color: var(--color-grey-light);
+    &:hover{
+      cursor: pointer;
+      background-color: var(--color-grey-light);
+      color: var(--color-grey-dark);
+    }
+  }
+}
