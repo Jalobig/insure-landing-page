@@ -7,7 +7,7 @@ This is a solution to the [Insure landing page challenge on Frontend Mentor](htt
 - [Overview](#overview)
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
-  <!-- - [Links](#links) -->
+  - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
 - [Author](#author)
@@ -26,9 +26,9 @@ Users should be able to:
 ![Desktop design](desktop-design.jpg)
 ![Mobile design](mobile-design.jpg)
 
-<!-- ### Links
+### Links
 
-- Live Site URL: [Live site here](https://Jalobig.github.io/insure-landing-page/) -->
+- Live Site URL: [Live site here](https://Jalobig.github.io/insure-landing-page/)
 
 ## My process
 

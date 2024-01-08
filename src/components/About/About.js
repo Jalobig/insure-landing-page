@@ -3,6 +3,7 @@ import classes from "./About.module.scss";
 import IconElectric from "../../images/icon-snappy-process.svg";
 import IconMoney from "../../images/icon-affordable-prices.svg";
 import IconPerson from "../../images/icon-people-first.svg";
+import useMediaQuery from "../../hooks/useMediaQuery";
 
 const ABOUTUS = [
   {
@@ -25,13 +26,19 @@ const ABOUTUS = [
   },
 ];
 const About = () => {
+  const media = useMediaQuery("only screen and (max-width:1024px");
   return (
     <div className={classes.about}>
+      {media && <hr className={classes.about__line} />}
       <h1 className={classes.about__heading}>We're different</h1>
       <div className={classes.about__features}>
         {ABOUTUS.map((feature) => (
           <div className={classes.about__feature}>
-            <img src={feature.icon} alt={feature.name} className={classes.about__icon} />
+            <img
+              src={feature.icon}
+              alt={feature.name}
+              className={classes.about__icon}
+            />
             <h4 className={classes.about__title}>{feature.title}</h4>
             <p className={classes.about__text}>{feature.text}</p>
           </div>

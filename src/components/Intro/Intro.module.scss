@@ -7,6 +7,14 @@
     white 37.5rem
   );
   color: var(--color-grey-light);
+  @media only screen and (max-width:1024px) {
+    background-image: linear-gradient(
+      to bottom,
+      var(--color-primary) 0px,
+      var(--color-primary) ,
+    );
+      
+  }
   &__group {
     display: flex;
     gap: 2rem;
@@ -14,6 +22,13 @@
     max-width: 69.375rem;
     margin: auto;
     padding-top: 6.25rem;
+    @media only screen and (max-width:1024px) {
+      flex-direction: column-reverse;
+      padding-top: 0;
+      width: 100%;
+    }
+    
+    
   }
   &__line {
     width: 9rem;
@@ -22,9 +37,18 @@
     }
     &--dark {
       margin-top: 3rem;
+     
     }
   }
   &__info {
+    @media only screen and (max-width:1024px) {
+      position: relative;
+      width: 90%;
+      text-align: center;
+      margin: auto; 
+      padding-bottom: 2rem;
+     }
+    
   }
   &__heading {
     font-family: var(--heading-font);
@@ -33,10 +57,14 @@
     line-height: 1;
     margin-bottom: 1.5rem;
     margin-top: 4.5rem;
+    @media only screen and (max-width:425px) {
+      font-size: 2.7rem;
+    }
   }
   &__text {
     line-height: 1.5;
     margin-bottom: 2rem;
+    
   }
   &__image {
     width: 100%;
@@ -47,10 +75,14 @@
     position: absolute;
     bottom: 0;
     left: 0;
+    @media only screen and (max-width:1024px) {
+      left: -3rem;
+      top: -2rem;
+    }
   }
   &__right {
     position: absolute;
-    top: 0;
-    right: 0;
+    bottom: -15rem;
+    right: -1rem;
   }
 }
